@@ -1,0 +1,182 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Projects | Amar</title>
+	<meta name="description" content="Portfolio website for Amar Ramachandran">
+	<meta name="author" content="Amar Ramachandran">
+
+
+	<link href="https://fonts.googleapis.com/css?family=Literata&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+
+	<link href="main.css" rel="stylesheet" />
+
+	<style type="text/css">
+		#content {
+			display: grid;
+			grid-template-columns: auto;
+			grid-template-rows: 40px 30px 5px 30px 20px auto;
+		}
+
+		#headline {
+			grid-column-start: 1;
+			grid-column-end: 2;
+			grid-row-start: 2;
+			grid-row-end: 3;
+
+			font-family: 'Roboto', sans-serif;
+			font-size: 24px;
+		}
+
+		#byline {
+			grid-column-start: 1;
+			grid-column-end: 2;
+			grid-row-start: 4;
+			grid-row-end: 5;
+
+			font-family: 'Roboto', sans-serif;
+			font-weight: 200;
+			font-size: 16px;
+		}
+
+		#projects_container {
+			grid-column-start: 1;
+			grid-column-end: 2;
+			grid-row-start: 6;
+			grid-row-end: 7;
+		}
+
+		.project {
+			display: grid;
+			grid-template-columns: 200px auto;
+			grid-template-rows: 25px auto;
+
+			margin-top: 30px;
+		}
+
+		.project_name {
+			grid-column-start: 1;
+			grid-column-end: 2;
+			grid-row-start: 1;
+			grid-row-end: 2;
+
+			font-family: 'Roboto', sans-serif;
+			font-size: 18px;
+			font-weight: bold;
+		}
+
+		.project_tech {
+			grid-column-start: 2;
+			grid-column-end: 3;
+			grid-row-start: 1;
+			grid-row-end: 2;
+
+			font-family: 'Roboto', sans-serif;
+			font-size: 16px;
+
+			text-align: right;
+		}
+
+		.project_description {
+			grid-column-start: 1;
+			grid-column-end: 3;
+			grid-row-start: 2;
+			grid-row-end: 3;
+
+			font-family: 'Roboto', sans-serif;
+			font-size: 16px;
+			color: #565656;
+		}
+
+		@media only screen and (max-width: 700px) {
+			#content {
+				display: grid;
+				grid-template-columns: auto;
+				grid-template-rows: 40px 30px 5px 30px 20px auto;
+			}
+
+			.project {
+				grid-template-columns: auto;
+				grid-template-rows: 25px 25px auto;
+			}
+
+			.project_name {
+				grid-column-start: 1;
+				grid-column-end: 2;
+				grid-row-start: 1;
+				grid-row-end: 2;
+			}
+
+			.project_tech {
+				grid-column-start: 1;
+				grid-column-end: 2;
+				grid-row-start: 2;
+				grid-row-end: 3;
+
+				text-align: left;
+			}
+
+			.project_description {
+				grid-column-start: 1;
+				grid-column-end: 2;
+				grid-row-start: 3;
+				grid-row-end: 4;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="sidebar">
+			<div id="profile">
+				<div id="profile_img"></div>
+			</div>
+			<div id="name">Amar Ramachandran</div>
+
+			<div id="menu_items">
+				<div id="home" class="menu"><a href="index.html">Home</a></div>
+				<div id="projects" class="active menu"><a href="projects.html">Projects</a></div>
+				<div id="resume" class="menu"><a href="resume.html">Resume</a></div>
+				<div id="contact" class="menu"><a href="contact.html">Contact</a></div>
+			</div>
+		</div>
+		<div id="content">
+			<div id="headline">What I've done</div>
+			<div id="byline">These are a collection of side-projects I've worked on.</div>
+			
+			<div id="projects_container">
+				<div class="project">
+					<div class="project_name">The News Network</div>
+					<div class="project_tech">"Big Data", NLP, Data Science</div>
+					<div class="project_description">In November of 2019 I built a scraper to collect all headlines from the top 30 US news organizations (as of Jan. 2020 I have collected ~30,000 headlines). Using this data I have been working on a platform that provides media insights like tracing the history & evolution of a story, automatic topic-modeling, and sentiment analysis. More info coming soon :)</div>
+				</div>
+
+				<div class="project">
+					<div class="project_name">Dive</div>
+					<div class="project_tech">Nginx, Swift (iOS), Node.js, RTMP</div>
+					<div class="project_description">Dive is a live streaming social network for iOS built using RTMP, Node.js, and Swift. Dive uses a social graph (follower-following model) and hashtags (livestreams have assosciated hashtags that users can follow). This project grew out of a desire to know more about how live streaming technologies work. <a href="https://imgur.com/a/bdCYGFs" class="link">Screenshots</a></div>
+				</div>
+
+				<div class="project">
+					<div class="project_name">YouTube tree</div>
+					<div class="project_tech">JavaScript, Verlet Physics</div>
+					<div class="project_description">
+						This project visualizes the YouTube recommendation algorithm to provide insights into its unique characteristics. My hope was the make the blackbox YouTube recommendation algorithm more tangible by creating novel ways of interacting with the algorithm. The visualizations help provide information about the YouTube recommendation algorithm's personalitiy including how it creates rabbit-holes, information silos, and endless recommendations. <a href="https://www.youtube.com/watch?v=5zUIlFzBT_I" class="link">Demo</a></div>
+				</div>
+
+				<div class="project">
+					<div class="project_name">Peer2Peer</div>
+					<div class="project_tech">Swift (iOS), Node.js</div>
+					<div class="project_description">
+						Peer2Peer is an iOS app that connects volunteer tutors to students in need of academic help based on subjects, physical proximity, and our intelligent ratings system. Won 1st place in CA-18 for the <a href="http://www.mercurynews.com/2017/08/14/app-challenge-open-to-district-18-high-school-students/" class="link">2016 Congressional App Challenge</a>. A demo of the app can be seen 
+						<a href="https://vimeo.com/290605930" class="link">here</a>. </div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

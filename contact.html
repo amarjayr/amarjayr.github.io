@@ -1,0 +1,82 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Contact | Amar</title>
+	<meta name="description" content="Portfolio website for Amar Ramachandran">
+	<meta name="author" content="Amar Ramachandran">
+
+
+	<link href="https://fonts.googleapis.com/css?family=Literata&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+
+	<link href="main.css" rel="stylesheet" />
+
+	<style type="text/css">
+		#content {
+			display: grid;
+			grid-template-columns: auto;
+			grid-template-rows: 40px 30px 5px 30px 50px auto;
+		}
+
+		#headline {
+			grid-column-start: 1;
+			grid-column-end: 2;
+			grid-row-start: 2;
+			grid-row-end: 3;
+
+			font-family: 'Roboto', sans-serif;
+			font-size: 24px;
+		}
+
+		#byline {
+			grid-column-start: 1;
+			grid-column-end: 2;
+			grid-row-start: 4;
+			grid-row-end: 5;
+
+			font-family: 'Roboto', sans-serif;
+			font-weight: 200;
+			font-size: 16px;
+		}
+
+		#description {
+			grid-column-start: 1;
+			grid-column-end: 2;
+			grid-row-start: 6;
+			grid-row-end: 7;
+
+			font-family: 'Roboto', sans-serif;
+			font-size: 16px;
+			color: #565656;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="sidebar">
+			<div id="profile">
+				<div id="profile_img"></div>
+			</div>
+			<div id="name">Amar Ramachandran</div>
+
+			<div id="menu_items">
+				<div id="home" class="menu"><a href="index.html">Home</a></div>
+				<div id="projects" class="menu"><a href="projects.html">Projects</a></div>
+				<div id="resume" class="menu"><a href="resume.html">Resume</a></div>
+				<div id="contact" class="active menu"><a href="contact.html">Contact</a></div>
+			</div>
+		</div>
+		<div id="content">
+			<div id="headline">Let's connect</div>
+			<div id="byline">You can find me on <a href="https://github.com/amarjayr/" class="link">GitHub</a> and <a href="https://www.linkedin.com/in/amarjayr/" class="link">LinkedIn</a>.</div>
+			
+			<div id="description">
+				<p>For other inquiries, please email me at <a href="mailto:amarrmchndrn1@gmail.com" class="link">amarrmchndrn1@gmail.com</a>.</p>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

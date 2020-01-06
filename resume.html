@@ -1,0 +1,314 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Resume | Amar</title>
+	<meta name="description" content="Portfolio website for Amar Ramachandran">
+	<meta name="author" content="Amar Ramachandran">
+
+
+	<link href="https://fonts.googleapis.com/css?family=Literata&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+
+	<link href="main.css" rel="stylesheet" />
+
+	<style type="text/css">
+		#content {
+			display: grid;
+			grid-template-columns: auto;
+			grid-template-rows: 40px 30px 5px 30px 20px auto;
+		}
+
+		#headline {
+			grid-column-start: 1;
+			grid-column-end: 2;
+			grid-row-start: 2;
+			grid-row-end: 3;
+
+			font-family: 'Roboto', sans-serif;
+			font-size: 24px;
+		}
+
+		#byline {
+			grid-column-start: 1;
+			grid-column-end: 2;
+			grid-row-start: 4;
+			grid-row-end: 5;
+
+			font-family: 'Roboto', sans-serif;
+			font-weight: 200;
+			font-size: 16px;
+		}
+
+		#resume_container {
+			grid-column-start: 1;
+			grid-column-end: 2;
+			grid-row-start: 6;
+			grid-row-end: 7;
+
+			display: grid;
+			grid-template-columns: auto;
+			grid-template-rows: 70px 20px auto;
+		}
+
+		#education {
+			grid-column-start: 1;
+			grid-column-end: 2;
+			grid-row-start: 1;
+			grid-row-end: 2;
+	
+			display: grid;
+			grid-template-columns: auto;
+			grid-template-rows: 20px 10px auto;
+		}
+
+		.section_title {
+			grid-column-start: 1;
+			grid-column-end: 2;
+			grid-row-start: 1;
+			grid-row-end: 2;
+
+			font-weight: 700;
+
+			font-size: 18px;
+		}
+
+		.education_row {
+			grid-column-start: 1;
+			grid-column-end: 2;
+			grid-row-start: 3;
+			grid-row-end: 4;
+
+			display: grid;
+			grid-template-columns: auto 180px;
+			grid-template-rows: 22px 22px;
+		}
+
+		.education_name {
+			grid-column-start: 1;
+			grid-column-end: 2;
+			grid-row-start: 1;
+			grid-row-end: 2;
+		}
+
+		.education_degree {
+			grid-column-start: 1;
+			grid-column-end: 2;
+			grid-row-start: 2;
+			grid-row-end: 3;
+		}
+
+		.education_date {
+			grid-column-start: 2;
+			grid-column-end: 3;
+			grid-row-start: 1;
+			grid-row-end: 2;
+
+			font-weight: 500;
+
+			text-align: right;
+		}
+
+		#experience {
+			grid-column-start: 1;
+			grid-column-end: 2;
+			grid-row-start: 3;
+			grid-row-end: 4;
+	
+			display: grid;
+			grid-template-columns: auto;
+			grid-template-rows: 20px 10px auto 10px auto 10px auto 10px auto;
+		}
+
+		#netskope {
+			grid-column-start: 1;
+			grid-column-end: 2;
+			grid-row-start: 3;
+			grid-row-end: 4;
+		}
+
+		#havalo {
+			grid-column-start: 1;
+			grid-column-end: 2;
+			grid-row-start: 5;
+			grid-row-end: 6;
+		}
+
+		#upwork {
+			grid-column-start: 1;
+			grid-column-end: 2;
+			grid-row-start: 7;
+			grid-row-end: 8;
+		}
+
+		#netskope2 {
+			grid-column-start: 1;
+			grid-column-end: 2;
+			grid-row-start: 9;
+			grid-row-end: 10;
+		}
+
+		.experience_row {
+			display: grid;
+			grid-template-columns: auto 180px;
+			grid-template-rows: 22px 5px auto;
+		}
+
+		.experience_name {
+			grid-column-start: 1;
+			grid-column-end: 2;
+			grid-row-start: 1;
+			grid-row-end: 2;
+		}
+
+		.experience_info {
+			grid-column-start: 1;
+			grid-column-end: 3;
+			grid-row-start: 3;
+			grid-row-end: 4;
+
+			font-weight: 200;
+		}
+
+		.experience_date {
+			grid-column-start: 2;
+			grid-column-end: 3;
+			grid-row-start: 1;
+			grid-row-end: 2;
+
+			font-weight: 500;
+
+			text-align: right;
+		}
+
+		.experience_info p {
+			margin-top: 0px;
+			margin-bottom: 0px;
+		}
+
+		@media only screen and (max-width: 900px) {
+			.education_row {
+				display: grid;
+				grid-template-columns: auto;
+				grid-template-rows: 22px 22px 22px;
+			}
+
+			.education_date {
+				grid-column-start: 1;
+				grid-column-end: 2;
+				grid-row-start: 3;
+				grid-row-end: 4;
+
+				text-align: left;
+			}
+
+			#resume_container {
+				grid-template-rows: 90px 20px auto;
+			}
+
+			.experience_row {
+				display: grid;
+				grid-template-columns: auto;
+				grid-template-rows: 22px 22px 5px auto;
+			}
+
+			.experience_date {
+				grid-column-start: 1;
+				grid-column-end: 2;
+				grid-row-start: 2;
+				grid-row-end: 3;
+
+				text-align: left;
+			}
+
+			.experience_info {
+				grid-column-start: 1;
+				grid-column-end: 2;
+				grid-row-start: 4;
+				grid-row-end: 5;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="sidebar">
+			<div id="profile">
+				<div id="profile_img"></div>
+			</div>
+			<div id="name">Amar Ramachandran</div>
+
+			<div id="menu_items">
+				<div id="home" class="menu"><a href="index.html">Home</a></div>
+				<div id="projects" class="menu"><a href="projects.html">Projects</a></div>
+				<div id="resume" class="menu active"><a href="resume.html">Resume</a></div>
+				<div id="contact" class="menu"><a href="contact.html">Contact</a></div>
+			</div>
+		</div>
+		<div id="content">
+			<div id="headline">Where I've been</div>
+			<div id="byline">A PDF of my resume is available <a href="" class="link">here</a>.</div>
+
+			<div id="resume_container">
+				<div id="education">
+					<div class="section_title">Education</div>
+					<div id="education_michigan" class="education_row">
+						<div class="education_name">University of Michigan, Ann Arbor</div>
+						<div class="education_degree"><i>BS, Computer Science</i></div>
+						<div class="education_date">2018 to present</div>
+					</div>
+					
+				</div>
+				<div id="experience">
+					<div class="section_title">Experience</div>
+					<div class="experience_row" id="netskope">
+						<div class="experience_name"><span style="font-weight: 500;">Netskope</span> – Site Reliability Engineer</div>
+						<div class="experience_info">
+							<p>• Architected & implemented intelligent monitoring microservices to collect up to 100 real-time metrics from ~1M agents in order to improve visibility into application performance</p>
+							<p>• Microservices included authentication, ingestion, and metrics management. Architecture design resembled a botnet where a microservice managed each agent’s reporting, including frequency and throttling</p>
+							<p>• Coordinated across multiple teams to gather requirements and understand different needs and limitations</p>
+							<p>• Technologies used: Kubernetes, Docker, GCP, Helm, Artifactory, Python</p>
+						</div>
+						<div class="experience_date">Summer 2019</div>
+					</div>
+
+					<div class="experience_row" id="havalo">
+						<div class="experience_name"><span style="font-weight: 500;">Havalo</span> – Software Engineer</div>
+						<div class="experience_info">
+							<p>• Havalo is a student information system that stores and analyzes student and school data</p>
+							<p>• Developed several core features to make the product more competitive, including major portions of attendance and discipline modules</p>
+							<p>• Helped with the prioritization of features in the product roadmap</p>
+							<p>• Technologies used: Java, Javascript, Handlebars, Maven, MySQL</p>
+						</div>
+						<div class="experience_date">Summer 2018 to Present</div>
+					</div>
+
+					<div class="experience_row" id="upwork">
+						<div class="experience_name"><span style="font-weight: 500;">Upwork</span> – Freelancer</div>
+						<div class="experience_info">
+							<p>• Multiple software projects completed on Upwork, the largest online workplace for freelancers</p>
+							<p>• Client engagements involved understanding requirements, defining technical specifications, and implementing solutions</p>
+							<p>• Technologies used: Google App Script, Python, iOS SDK & Swift, PHP, Heroku, Firebase</p>
+							<p>• Client feedback can be seen on <a href="https://www.upwork.com/fl/amarramachandran" class="link">Upwork profile</a></p>
+						</div>
+						<div class="experience_date">Jan 2018 to Present</div>
+					</div>
+
+					<div class="experience_row" id="netskope2">
+						<div class="experience_name"><span style="font-weight: 500;">Netskope</span> – Software Engineer</div>
+						<div class="experience_info">
+							<p>• Created internal data warehouse to store aggregated production data for business analytics</p>
+							<p>• Automated data fetch between production cluster and data warehouse by designing APIs, creating security rules, removing Personally Identifiable Information (PII) and aggregating data</p>
+							<p>• Implemented single sign-on through LDAP/AD integration in Redash and submitted modifications back to open source project (merged in PR #1836)</p>
+							<p>• Fixed data corruption issues in production databases and deleted orphaned chunks in MongoDB</p>
+						</div>
+						<div class="experience_date">Summer 2017</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Home | Amar</title>
+	<meta name="description" content="Portfolio website for Amar Ramachandran">
+	<meta name="author" content="Amar Ramachandran">
+
+
+	<link href="https://fonts.googleapis.com/css?family=Literata&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+
+	<link href="main.css" rel="stylesheet" />
+
+	<style type="text/css">
+		#content {
+			display: grid;
+			grid-template-columns: auto;
+			grid-template-rows: 40px 30px 5px 30px 50px auto;
+		}
+
+		#headline {
+			grid-column-start: 1;
+			grid-column-end: 2;
+			grid-row-start: 2;
+			grid-row-end: 3;
+
+			font-family: 'Roboto', sans-serif;
+			font-size: 24px;
+		}
+
+		#byline {
+			grid-column-start: 1;
+			grid-column-end: 2;
+			grid-row-start: 4;
+			grid-row-end: 5;
+
+			font-family: 'Roboto', sans-serif;
+			font-weight: 200;
+			font-size: 24px;
+		}
+
+		#description {
+			grid-column-start: 1;
+			grid-column-end: 2;
+			grid-row-start: 6;
+			grid-row-end: 7;
+
+			font-family: 'Roboto', sans-serif;
+			font-size: 16px;
+			color: #565656;
+		}
+
+		@media only screen and (max-width: 700px) {
+			#content {
+				display: grid;
+				grid-template-columns: auto;
+				grid-template-rows: 40px 30px 5px 30px 50px auto;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="sidebar">
+			<div id="profile">
+				<div id="profile_img"></div>
+			</div>
+			<div id="name">Amar Ramachandran</div>
+
+			<div id="menu_items">
+				<div id="home" class="active menu"><a href="index.html">Home</a></div>
+				<div id="projects" class="menu"><a href="projects.html">Projects</a></div>
+				<div id="resume" class="menu"><a href="resume.html">Resume</a></div>
+				<div id="contact" class="menu"><a href="contact.html">Contact</a></div>
+			</div>
+		</div>
+		<div id="content">
+			<div id="headline">Hi, I'm <b>Amar</b>.</div>
+			<div id="byline">Thanks for stopping by.</div>
+			
+			<div id="description">
+				<p>I love to code, design, and make music.</p>
+				<p>I am a co-director of <a href="http://creatorspace.co" class="link">Shift Creator Space</a>, a creator space for makers at the University of Michigan.</p>
+				<p>On the side, I'm a sophomore at the University of Michigan pursuing my Bachelor’s degree in Computer Science.</p>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
